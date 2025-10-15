@@ -1,4 +1,6 @@
 import React from 'react'
+import Header from './header'
+import Footer from './footer'
 
 function main() {
     return (
@@ -12,6 +14,7 @@ function main() {
                     <a className=' btn btn-info' href=""> login</a>
                 </div>
             </div>
+
         </>
     )
 }
