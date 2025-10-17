@@ -1,6 +1,6 @@
 import { use, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpider, faSpinner } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios'
 
 const register = () => {
@@ -45,7 +45,7 @@ const register = () => {
               <small >{errors.username && <div className=' text-danger'>{errors.password}</div>}</small>
               {success && <div className=' alert alert-danger '> registeration successfully</div>}
               {loading ? (
-                <button type=' submit' className=' btn btn-info d-black mx-auto '><FontAwesomeIcon icon={faSpinner} spin /> please wait ..</button>
+                <button type=' submit' className=' btn btn-info d-black mx-auto '> please wait ..</button>
               ) : (
                 <button type=' submit' className=' btn btn-info d-black mx-auto '> register</button>
               )}

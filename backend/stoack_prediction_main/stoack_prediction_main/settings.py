@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'account',
     'api',
     "corsheaders",
+    'rest_framework_simplejwt',
+    
     
 
 ]
@@ -135,3 +137,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # your React app
     "http://127.0.0.1:5173",  # optional, just in case
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ( 
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ) 
+}
