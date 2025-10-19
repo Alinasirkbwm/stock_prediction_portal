@@ -22,7 +22,7 @@ const login = () => {
             localStorage.setItem('accessToken', response.data.access)
             localStorage.setItem('refreshToken', response.data.refresh)
             console.log('loged in successful', userdata)
-            navigate('/')
+            navigate('/dashboard')
             setislogedin(true)
         } catch {
             console.error(" invalid credentials ")
@@ -41,7 +41,7 @@ const login = () => {
                         <form action="" onSubmit={loginhandle}>
                             <input type="text" name="" id="" className=' form-control mb-3' placeholder='enter your name ' value={username} onChange={(e) => setusername(e.target.value)} />
 
-                            <input type="password" className=' form-control mb-3' placeholder=' set a good password  ' value={password} onChange={(e) => setpassword(e.target.value)} />
+                            <input type="password" className=' form-control mb-3' placeholder='  enter password  ' value={password} onChange={(e) => setpassword(e.target.value)} />
                             {error && <div className="text-danger ">{error}</div>}
                             {loading ? (
                                 <button type=' submit' className=' btn btn-info d-black mx-auto '> loging in ..</button>

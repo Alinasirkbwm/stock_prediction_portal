@@ -10,3 +10,17 @@ class Registerview(generics.CreateAPIView):
     queryset=User.objects.all()
     serializer_class=UserSerializer
     permission_classes=[AllowAny]
+
+from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated 
+from rest_framework.response import Response
+
+# Create your views here.
+class protected_view(APIView):
+    permission_classes=[IsAuthenticated]
+
+    def get(self,request):
+        response={
+            'status':'request was permitted'
+        }
+        return Response(response)

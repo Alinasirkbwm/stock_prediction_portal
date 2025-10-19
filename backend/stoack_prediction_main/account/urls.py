@@ -1,7 +1,9 @@
 from django.urls import path, include
-from . import views
+from .views import protected_view,Registerview
 
 
 urlpatterns = [
-    path("api/",views.Registerview.as_view())
+    path("api/",Registerview.as_view()),
+    path('protected-view',protected_view.as_view()),
+
 ]

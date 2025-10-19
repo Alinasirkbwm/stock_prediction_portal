@@ -11,7 +11,7 @@ function main() {
 
                     <h1 className=' text-light'> stock predction portal </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam possimus sint expedita esse velit, impedit eum reiciendis mollitia repudiandae ea accusantium praesentium sapiente in dolores repellendus! Amet, dignissimos ullam.</p>
-                    <a className=' btn btn-info' href=""> login</a>
+                    <a className=' btn btn-info' href=""> explore </a>
                 </div>
             </div>
 

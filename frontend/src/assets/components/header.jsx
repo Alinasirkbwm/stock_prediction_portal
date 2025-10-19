@@ -18,7 +18,7 @@ const header = () => {
                 ) : (
                     <>
 
-                        <Button text='login'></Button>
+                        <Link className=' btn btn-primary' to='/login'>login</Link>
                         <Link className=' btn btn-primary' to='/register'>register</Link>
                     </>
                 )
